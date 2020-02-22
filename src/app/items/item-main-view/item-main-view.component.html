@@ -1,0 +1,9 @@
+<app-item-list 
+    [items]="items2" 
+    (editModeAction)="onEditModeAction($event)" 
+    (deleteAction)="onDeleteAction($event)" 
+    (selectedItemAction)="onSelectedItemAction($event)">
+</app-item-list>
+
+<app-item-actions [item]="editedItem" (updateItemEvent)="onUpdateOrCreate($event)"></app-item-actions>
+<!-- <app-item-detail [item]="selectedItem"></app-item-datail> -->
